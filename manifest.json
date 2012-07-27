@@ -1,0 +1,8 @@
+{
+  "name": "Coffee Script Extension",
+  "version": "0.0.1",
+  "manifest_version": 2,
+  "background": {
+    "scripts": ["lib/compiled/background.js"]
+  }
+}
