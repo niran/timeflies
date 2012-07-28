@@ -2,6 +2,7 @@ notify = ->
   notification =
     window.webkitNotifications.createHTMLNotification "notification.html"
   notification.show()
+  setTimeout((-> notification.cancel()), 10000)
 
 lastNotifiedAt = null
 
