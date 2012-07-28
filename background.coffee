@@ -12,7 +12,7 @@ setInterval(->
     if lastNotifiedAt
       partPairs = _.zip(nowParts, lastNotifiedAt)
       return if _.all(a == b for [a, b], index in partPairs, _.identity)
-    # return if now.getMinutes() % 5
+    return if now.getMinutes() % 10
 
     console.log 'Notifying'
     notify()
