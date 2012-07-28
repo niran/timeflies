@@ -3,7 +3,10 @@
   "version": "0.0.1",
   "manifest_version": 2,
   "background": {
-    "scripts": ["lib/compiled/background.js"]
+    "scripts": [
+      "vendor/underscore/underscore-min.js",
+      "lib/compiled/background.js"
+    ]
   },
   "permissions": [
     "notifications"
